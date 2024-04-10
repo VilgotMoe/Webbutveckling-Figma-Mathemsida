@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* ---- Nav bar ---- */
+.header {
+  width: 100vw;
+  height: 20svh;
+  display: flex;
+  align-items: center;
+}
+.header img {
+  width: 12vw;
+  justify-content: center;
+}
+.header ul {
+  display: flex;
+  list-style-type: none;
+  flex-grow: 1;
+  gap: 7vw;
+  margin-top: 4vh;
+  margin-left: 20vw;
+}
+.header ul li a {
+  color: #ee5151;
+  text-decoration: none;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+/* ---- Index (start sida) ---- */
+.content {
+  display: flex;
+  width: 100vw;
+  height: 80svh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 80vh;
+  font-size: 4vh;
+  position: left;
+}
+.left h1 {
+  margin-left: 10vw;
+  font-size: 4vw;
+}
+.left input {
+  width: 10vw;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: 10vw;
+  margin-top: 6vh;
+  color: #e92828;
+  font-weight: bold;
+  font-size: 1.2vw;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.left input:hover {
+  background: #ffd1d1;
+  transform: scale(1.05);
+}
+
+.right {
+  display: flex;
+  width: 50%;
+  height: 80vh;
+  position: right;
+  text-align: center;
+  align-items: center;
+}
+.right img {
+  height: 25vw;
+}
+
+#red {
+  color: #e92828;
+}/*# sourceMappingURL=style.css.map */

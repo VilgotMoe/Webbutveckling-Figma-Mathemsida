@@ -1,0 +1,99 @@
+// Definera färger
+$primary-color: #ee5151;
+$accent-color: #e92828;
+$hover-color: #ffd1d1;
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* ---- Nav bar ---- */
+.header {
+  width: 100vw;
+  height: 20svh;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 12vw;
+    justify-content: center;
+  }
+
+  ul {
+    display: flex;
+    list-style-type: none;
+    flex-grow: 1;
+    gap: 7vw;
+    margin-top: 4vh;
+    margin-left: 20vw;
+
+    li {
+      a {
+        color: $primary-color;
+        text-decoration: none;
+        font-size: 2vw;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+/* ---- Index (start sida) ---- */
+.content {
+  display: flex;
+  width: 100vw;
+  height: 80svh;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 80vh;
+  font-size: 4vh;
+  position: left;
+
+  h1 {
+    margin-left: 10vw;
+    font-size: 4vw;
+  }
+
+  input {
+    $button-width: 10vw;
+    width: $button-width;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 10vw;
+    margin-top: 6vh;
+    color: $accent-color;
+    font-weight: bold;
+    font-size: 1.2vw;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background: $hover-color;
+      transform: scale(1.05);
+    }
+  }
+}
+
+.right {
+  display: flex;
+  width: 50%;
+  height: 80vh;
+  position: right;
+  text-align: center;
+  align-items: center;
+
+  img {
+    height: 25vw;
+  }
+}
+
+#red {
+  color: $accent-color;
+}
